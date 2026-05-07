@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <link rel="stylesheet" href="style.css">
+    <title>Clínica</title>
+</head>
+
+<body>
+    <h1 id="titulo">Clínica</h1>
+    <div class="container">
+        <div class="divPaciente">
+            <h1>LISTA DE PACIENTES</h1>
+            <ul id="lista-pacientes">
+
+            </ul>
+        </div>
+        <div class="divMedico">
+            <h1>LISTA DE MÉDICOS</h1>
+            <ul id="lista-medicos">
+            </ul>
+        </div>
+
+        <div class="consultar">
+            <h1>Pesquisar consulta</h1>
+            <input type="text" id="nomePaciente" placeholder="Digite o nomde do paciente">
+            <button id="btn" value="Pesquisar" onclick="buscarNome()">🔍</button>
+            <div id="pesquisa-consulta">
+                <ul id="filtro-pesquisa">
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="inserir">
+            <h1>Cadastrar Paciente</h1>
+            <input type="text" id="novo-paciente" placeholder="Digite o nome do paciente">
+            <button id="cadastrar" value="Pesquisar" onclick="cadastrarPaciente()">Cadastrar</button>
+            <button id="atualizar" value="atualizar" onclick="editar()">Atualizar</button>
+        </div>    
+    </div>
+
+
+<script src="app.js"></script>
+</body>
+
+</html>

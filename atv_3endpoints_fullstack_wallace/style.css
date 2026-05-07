@@ -1,0 +1,210 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    padding: 20px;
+    color: #333;
+}
+
+/* TÍTULO */
+#titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CARDS (TODAS AS DIVS) */
+.divPaciente,
+.divMedico,
+.consultar,
+.inserir {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+/* EFEITO HOVER NOS CARDS */
+.divPaciente:hover,
+.divMedico:hover,
+.consultar:hover,
+.inserir:hover {
+    transform: translateY(-5px);
+}
+
+/* CORES DIFERENTES */
+.divPaciente {
+    border-top: 5px solid #00c853;
+}
+
+.divMedico {
+    border-top: 5px solid #00bcd4;
+}
+
+.consultar {
+    border-top: 5px solid #ff4081;
+}
+
+.inserir {
+    border-top: 5px solid #7c4dff;
+}
+
+/* TÍTULOS INTERNOS */
+.divPaciente h1,
+.divMedico h1,
+.consultar h1,
+.inserir h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* LISTAS */
+#lista-medicos,
+#lista-pacientes,
+#filtro-pesquisa {
+    list-style: none;
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* ITENS DAS LISTAS */
+#lista-medicos ol,
+#lista-pacientes ol,
+#filtro-pesquisa ol {
+    background: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+/* HOVER ITENS */
+#lista-medicos ol:hover,
+#lista-pacientes ol:hover,
+#filtro-pesquisa ol:hover {
+    background: #e0f7fa;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* BOTÕES */
+button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* BOTÃO PRINCIPAL */
+#btn, #cadastrar, #atualizar {
+    width: 100%;
+    margin-top: 5px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+}
+
+#btn:hover,
+#cadastrar:hover,
+#atualizar:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+}
+
+/* BOTÕES DA LISTA */
+.lista button {
+    margin-left: 5px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+/* EDITAR */
+#btn_editar {
+    display: flex;
+    width: 80px;
+    justify-content: center;
+    background: #ffc107;
+    color: #333;
+}
+
+#btn_editar:hover {
+    background: #e0a800;
+}
+
+/* EXCLUIR */
+#btn_excluir {
+    justify-content: center;
+    width: 80px;
+    display:flex;
+    background: #dc3545;
+    color: #333;
+}
+
+#btn_excluir:hover {
+    background: #a71d2a;
+}
+
+/* SCROLL BONITO */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
+#botoes button{
+
+    display: inline-block;
+}
+.lista ol{
+    display: flex;
+}
